@@ -2,8 +2,11 @@
 @import "./base/vars";
 @import "./base/reset";
 @import "./base/base";
+@import "./base/fonts";
 
 //Blocks
+@import "./blocks/title";
+@import "./blocks/btn";
 @import "./blocks/header";
 @import "./blocks/logo";
 @import "./blocks/footer";
