@@ -37,6 +37,17 @@ section {
         width: 768px;
     }
 
+    /*Mobile*/
+    @media (max-width: 767px) {
+        width: 600px;
+    }
+
+    /*XS Mobile*/
+    @media (max-width: 599px) {
+        width: 100%;
+
+    }
+
     &--fluid {
         max-width: unset;
         width: 100%;
