@@ -4,6 +4,11 @@
     &__inner {
         display: flex;
         align-items: center;
+        padding-bottom: 50px;
+
+        @media (max-width: 899px) {
+            align-items: flex-start;
+        }
     }
 
     &__text {
@@ -12,6 +17,11 @@
 
     &__title {
         margin-bottom: 33px;
+
+        @media (max-width: 899px) {
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
     }
 
     &__descr {
@@ -25,17 +35,45 @@
         height: 375px;
         object-fit: cover;
         flex-shrink: 0;
+
+        @media (max-width: 767px) {
+            width: 250px;
+            height: 250px;
+        }
+
+        /*XS Mobile*/
+        @media (max-width: 599px) {
+            display: none;
+        }
     }
 }
 
 .nav {
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        align-items: center;
+        padding: 15px 0;
+    }
+
     &__menu {
-        padding: 20px 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        column-gap: 50px;
         font-family: "Montserrat";
         font-weight: 600;
+
+        @media (max-width: 899px) {
+            padding: 10px 0 0;
+            column-gap: 25px;
+        }
+
+        @media (max-width: 767px) {
+            display: none;
+        }
     }
 
     &__item {
@@ -47,11 +85,47 @@
             color: #e09446;
             border-bottom: 2px solid $hover-color;
         }
+    }
+}
 
-        &-logo {
-            &:hover {
-                border-bottom: 2px solid transparent;
-            }
+.nav {
+    &__adaptive {
+        display: none;
+        transition: transform ease-in .2s;
+
+        @media (max-width: 767px) {
+            padding-top: 30px;
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            background-color: #00000027;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            align-items: center;
+            row-gap: 30px;
         }
     }
+}
+
+.burger {
+    display: none;
+    transition: stroke ease-in .2s;
+
+    /*Mobile*/
+    @media (max-width: 767px) {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.logo {
+    width: 65px;
+    height: 53px;
+}
+
+.hidden {
+    transform: translateX(100%);
+
 }
