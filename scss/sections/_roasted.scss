@@ -1,0 +1,24 @@
+.roasted {
+    &__inner {
+        text-align: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding-top: 264px;
+        padding-bottom: 252px;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+
+        /*Mobile*/
+        @media (max-width: 767px) {
+            font-size: 40px;
+        }
+    }
+
+    &__text {
+        max-width: 671px;
+        margin: 0 auto 10px;
+    }
+}
