@@ -1,0 +1,25 @@
+.mashine {
+    padding: 50px 0;
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__inner {
+        display: flex;
+    }
+
+    &__text p:last-of-type {
+        margin-bottom: 40px
+    }
+
+    &__descr {
+        color: #6F6F6F;
+        padding-bottom: 20px;
+
+        &-strong {
+            color: #141313;
+            font-weight: 700;
+        }
+    }
+}
