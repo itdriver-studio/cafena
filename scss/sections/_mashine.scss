@@ -3,10 +3,21 @@
 
     &__title {
         margin-bottom: 30px;
+
+        /*Big Mobile*/
+        @media (max-width: 899px) {
+            font-size: 40px;
+        }
     }
 
     &__inner {
         display: flex;
+
+        /*Big Mobile*/
+        @media (max-width: 899px) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__text p:last-of-type {
@@ -28,5 +39,20 @@
         height: 500px;
         object-fit: cover;
         border-radius: 25%;
+
+        /*XS Mobile*/
+        @media (max-width: 599px) {
+            width: 290px;
+            height: 290px;
+
+        }
+    }
+
+    &__btn {
+
+        /*Big Mobile*/
+        @media (max-width: 899px) {
+            margin-bottom: 40px;
+        }
     }
 }
