@@ -16,3 +16,15 @@ navAdaptive.addEventListener('click', () => {
     menuAdaptive.classList.add('hide');
     document.body.style.overflow = 'auto';
 })
+
+$('.slider').slick({
+    responsive: [{
+        breakpoint: 599,
+        settings: {
+            autoplay: true,
+            arrows: false,
+            pauseOnFocus: false,
+            pauseOnHover: false,
+        }
+    }]
+});
