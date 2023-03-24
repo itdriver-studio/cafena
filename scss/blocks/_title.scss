@@ -11,6 +11,21 @@
         line-height: 1.2;
         font-family: "Zcool";
         color: #1c1a1a;
+
+        /*Tablet*/
+        @media (max-width: 1199px) {
+            font-size: 45px;
+        }
+
+        /*Big Mobile*/
+        @media (max-width: 899px) {
+            font-size: 38px;
+        }
+
+        /*Mobile*/
+        @media (max-width: 767px) {
+            font-size: 32px;
+        }
     }
 
     &-article {
