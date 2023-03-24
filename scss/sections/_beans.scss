@@ -1,4 +1,11 @@
 .beans {
+    margin-bottom: 50px;
+
+    /*Mobile*/
+    @media (max-width: 767px) {
+        margin-bottom: 30px;
+    }
+
     &__title {
         margin-bottom: 50px;
     }
@@ -14,7 +21,6 @@
             align-items: center;
             row-gap: 30px;
         }
-
     }
 
     &__item {
