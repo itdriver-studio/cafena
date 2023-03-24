@@ -1,0 +1,66 @@
+.reviews {
+    &__title {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
+
+.slider {
+    min-width: 0;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.slide {
+    width: 762px;
+    margin: 0 auto;
+    min-width: 0;
+
+    &__text {
+        font-family: "Zcool";
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    &__client {
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        font-family: "Zcool";
+        align-items: center;
+
+        &-img {
+            width: 76px;
+            height: 76px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-track {
+    display: flex;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0;
+    width: 51px;
+    height: 51px;
+    z-index: 10;
+}
+
+.slick-next {
+    right: 0;
+    background: url("../images/icons/right.svg") 0 0 no-repeat;
+}
+
+.slick-prev {
+    background: url("../images/icons/left.svg") 0 0 no-repeat;
+}
